@@ -36,7 +36,7 @@ const ItemPage = () => {
       {loading && (
         <h1 className="text-[40px] text-gray-600 text-center ">Loading...</h1>
       )}
-      <div className="flex flex-col sm:flex-row justify-between items-center">
+      <div className="flex flex-col sm:flex-row justify-between sm:justify-evenly items-center">
         <img
           className="h-[80vh] m-[20px]"
           src={item.image_url}
@@ -47,7 +47,9 @@ const ItemPage = () => {
           <h1 className="font-[1000] text-center text-[60px] mb-[40px] text-red-500">
             {item.name}
           </h1>
-          <p className="m-[10px] text-center text-[20px] ">{item.description}</p>
+          <p className="m-[10px] text-center text-[20px] ">
+            {item.description}
+          </p>
         </div>
       </div>
     </div>
